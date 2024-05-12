@@ -16,7 +16,7 @@ namespace CustomTaskpane
 
             swFeatMgr = swModel.FeatureManager;
 
-            #region Create the hole wizard countersink hole 
+            #region Create the hole wizard thru hole 
             int GenericHoleType = (int)swWzdGeneralHoleTypes_e.swWzdHole;
             int StandardIndex = (int)swWzdHoleStandards_e.swStandardAnsiMetric;
             int FastenerTypeIndex = (int)swWzdHoleStandardFastenerTypes_e.swStandardAnsiMetricDrillSizes;
