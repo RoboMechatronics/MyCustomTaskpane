@@ -29,8 +29,9 @@ namespace CustomTaskpane
             #region Create UI
             string[] bitmap = new string[6];
             string toolTip = "Phan Nguyen Ngoc Hien | Solidworks Expert";
-            string directory = "C:\\Users\\HIEN\\Desktop\\SwAddIn_Demo\\myCustomTaskpane\\Resources\\";
-
+            string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string directory = Directory.GetParent(assemblyFolder).Parent.FullName + "\\Resources\\";
+            
             bitmap[0] = directory + "logo_large20x20.png";
             bitmap[1] = directory + "logo_large32x32.png";
             bitmap[2] = directory + "logo_large40x40.png";
